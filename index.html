@@ -5,10 +5,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     </head>
 
-    <body ng-app="">
+    <body ng-app="" ng-init="product=['A','B','C'];color='red';text='white'">
         FName : <input type="text" placeholder="INPUT YOUR NAME" ng-model="fname"/>
         LName : <input type="text" placeholder="INPUT YOUR NAME" ng-model="lname"/>
         <br>
         <h1>Hello : {{fname + ' ' + lname}}</h1>
+        <br>
+        <h2 style="background-color:{{color}};color:{{text}}">Product : {{product[1]}}</h2>
     </body>
 </html>
