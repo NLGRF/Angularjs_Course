@@ -6,6 +6,9 @@
     </head>
 
     <body ng-app="">
-        {{5*10}}
+        FName : <input type="text" placeholder="INPUT YOUR NAME" ng-model="fname"/>
+        LName : <input type="text" placeholder="INPUT YOUR NAME" ng-model="lname"/>
+        <br>
+        <h1>Hello : {{fname + ' ' + lname}}</h1>
     </body>
 </html>
